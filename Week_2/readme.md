@@ -25,12 +25,12 @@ import abc
 class Themes:
 
     """Конструктор класса, передает список тем объекту"""
-    def __init__(self, themes):
+    def __init__(self, themes: list):
         self.themes = themes
 
     """Абстрактный метод реализации добавления темы в конец списка тем."""
     @abc.abstractmethod  
-    def add_theme(self, theme): 
+    def add_theme(self, theme: str): 
         raise NotImplementedError("Нельзя вызывать абстрактный метод!")  # возбуждение ошибки
 
     """Метод, смещающий темы вправо на одну. Ничего не принимает.
@@ -53,7 +53,7 @@ class Themes:
 
     """Метод установки нового списка тем. Принимает новый список тем.
     Изменяет список старых тем на новый."""
-    def set_new_themes(self, themes):
+    def set_new_themes(self, themes: list):
         self.themes = themes
 
     """Метод, возвращающий первую тему списка. Ничего не принимает.
@@ -69,7 +69,7 @@ class Themes:
             raise AttributeError
 
     """Метод перегрузки вызова класса. Переопределяет список тем."""
-    def __call__(self, themes):
+    def __call__(self, themes: list):
         self.themes = themes
 
     """Метод перегрузки вызова объекта строкой. Возвращает список тем."""
@@ -85,7 +85,7 @@ class Theme(Themes):
 
     """Определение абстрактного метода родительского класса. Метод принимает название темы.
     Тема добавляется в конец списка тем."""
-    def add_theme(self, theme):
+    def add_theme(self, theme: str):
         self.themes.append(theme)
 
     """Переопределение метода вывода списка тем.
