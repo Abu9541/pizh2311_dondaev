@@ -15,4 +15,3 @@ add_subdirectory(bin)
 
 enable_testing()
 add_subdirectory(tests)
-add_executable(lab2 bin/main.cpp lib/number.cpp)

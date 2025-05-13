@@ -1,0 +1,21 @@
+# ninja log v6
+3	59	7688526932815341	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	f2421726db03af2d
+3	59	7688526932815341	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	f2421726db03af2d
+60	5972	7688526991962012	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	93d39b1d48749c1e
+60	5972	7688526991962012	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	93d39b1d48749c1e
+5973	6107	7688526992012017	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	c292a9e4bbaa0fdc
+5973	6107	7688526992012017	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	c292a9e4bbaa0fdc
+6107	6161	7688526993849300	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	184343c6c6cfdfb3
+6107	6161	7688526993849300	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	184343c6c6cfdfb3
+6161	6209	7688526994342499	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	e29835fb760397ca
+6161	6209	7688526994342499	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	e29835fb760397ca
+6210	6260	7688526994833946	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	d0ac3cf736492a5c
+6210	6260	7688526994833946	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	d0ac3cf736492a5c
+6260	6310	7688526995334550	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	325456ea3319f504
+6260	6310	7688526995334550	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	325456ea3319f504
+6311	6361	7688526995843680	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	1fa409c480d9a3d8
+6311	6361	7688526995843680	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	1fa409c480d9a3d8
+6361	6434	7688526996579705	CMakeFiles/googletest-populate-complete	8f2e60b9cd95c0fc
+6361	6434	7688526996579705	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	8f2e60b9cd95c0fc
+6361	6434	7688526996579705	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	8f2e60b9cd95c0fc
+6361	6434	7688526996579705	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	8f2e60b9cd95c0fc

@@ -1,0 +1,13 @@
+# ninja log v6
+13	342	7688527183380845	bin/CMakeFiles/lab2.dir/main.cpp.obj	183ce276c375f0cc
+10	357	7688527183351041	lib/CMakeFiles/number.dir/number.cpp.obj	d7c50cdd185152d3
+357	407	7688527186813686	lib/number.lib	178d19f844d5d4a2
+407	658	7688527187315805	bin/lab2.exe	d41814cd5e30b60b
+16	608	7688529322432222	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	7700e745f6400ca5
+19	883	7688529322462239	tests/CMakeFiles/number_tests.dir/number_test.cpp.obj	81cceac3a5818c57
+12	1487	7688529322392976	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	530f6c2deebac5ea
+1488	1546	7688529337149355	lib/gtest.lib	760fcc025bbae25c
+1546	1585	7688529337733487	lib/gtest_main.lib	6ac56195813ba765
+1585	2017	7688529342353905	tests/number_tests.exe	c1e58f2000adc2f
+1585	2017	7688529342353905	tests/number_tests[1]_tests.cmake	c1e58f2000adc2f
+1585	2017	7688529342353905	C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_10/out/build/x64-Debug/tests/number_tests[1]_tests.cmake	c1e58f2000adc2f
