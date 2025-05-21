@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_13/out/build/x64-Debug/tests/parser_tests[1]_tests.cmake")
-  include("C:/Users/Abu_9541/Desktop/Проекты/Курс 2/4 семестр/ООП/OOP/Week_13/out/build/x64-Debug/tests/parser_tests[1]_tests.cmake")
-else()
-  add_test(parser_tests_NOT_BUILT parser_tests_NOT_BUILT)
-endif()
