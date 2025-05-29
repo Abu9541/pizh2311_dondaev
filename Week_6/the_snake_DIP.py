@@ -26,7 +26,7 @@ pygame.display.set_caption("Змейка")
 clock = pygame.time.Clock()
 
 
-# Абстракции
+# Интерфейс для игрового объекта
 class IGameObject(ABC):
     @abstractmethod
     def draw(self):
@@ -37,25 +37,25 @@ class IGameObject(ABC):
     def position(self):
         pass
 
-    @position.setter
     @abstractmethod
     def position(self, value):
         pass
 
 
+# Интерфейс для еды
 class IFood(IGameObject):
     @abstractmethod
     def randomize_position(self):
         pass
 
 
+# Интерфейс контролируемого объекта
 class IControllable(IGameObject):
     @property
     @abstractmethod
     def direction(self):
         pass
 
-    @direction.setter
     @abstractmethod
     def direction(self, value):
         pass
@@ -65,13 +65,12 @@ class IControllable(IGameObject):
     def next_direction(self):
         pass
 
-    @next_direction.setter
     @abstractmethod
     def next_direction(self, value):
         pass
 
 
-# Реализации
+# Реализация игрового объекта
 class GameObject(IGameObject):
     def __init__(self, position=None, body_color=BOARD_BACKGROUND_COLOR):
         if position is None:
@@ -87,7 +86,6 @@ class GameObject(IGameObject):
     def position(self):
         return self._position
 
-    @position.setter
     def position(self, value):
         self._position = value
 
@@ -95,6 +93,7 @@ class GameObject(IGameObject):
         pass
 
 
+# Реализация еды
 class Apple(IFood, GameObject):
     def __init__(self, body_color=APPLE_COLOR, position=None):
         super().__init__(position, body_color)
@@ -113,6 +112,7 @@ class Apple(IFood, GameObject):
         pygame.draw.rect(screen, BORDER_COLOR, rect, 1)
 
 
+# Реализация контролируемого объекта
 class Snake(IControllable, GameObject):
     def __init__(
         self,
@@ -133,7 +133,6 @@ class Snake(IControllable, GameObject):
     def direction(self):
         return self._direction
 
-    @direction.setter
     def direction(self, value):
         self._direction = value
 
@@ -141,7 +140,6 @@ class Snake(IControllable, GameObject):
     def next_direction(self):
         return self._next_direction
 
-    @next_direction.setter
     def next_direction(self, value):
         self._next_direction = value
 
@@ -196,6 +194,7 @@ class Snake(IControllable, GameObject):
         self.direction = random.choice([UP, DOWN, LEFT, RIGHT])
 
 
+# Функция обработки клавиш
 def handle_keys(controllable: IControllable):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -215,6 +214,7 @@ def handle_keys(controllable: IControllable):
                 raise SystemExit
 
 
+# Точка входа
 def main():
     apple = Apple()
     snake = Snake(length=1)
