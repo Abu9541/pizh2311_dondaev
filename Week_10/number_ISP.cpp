@@ -141,7 +141,7 @@ UInt2022 UInt2022::create_from_string(const char* buff) {
     return result;
 }
 
-// Global operators implementations (same logic as before)
+// Реализация глобальных операторов
 UInt2022 operator+(const UInt2022& lhs, const UInt2022& rhs) {
     UInt2022 result;
     uint32_t carry = 0;

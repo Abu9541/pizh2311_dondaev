@@ -4,6 +4,7 @@
 #include <array>
 #include <string>
 
+// Интерфейс для конвертации
 class INumberConverter {
 public:
     virtual ~INumberConverter() = default;
@@ -11,6 +12,8 @@ public:
     virtual void from_string(const char* buff) = 0;
 };
 
+
+// Интерфейс для арифметических операций
 class IArithmeticOperations {
 public:
     virtual ~IArithmeticOperations() = default;
@@ -20,6 +23,8 @@ public:
     virtual IArithmeticOperations* divide(const IArithmeticOperations* other) = 0;
 };
 
+
+// Интерфейс для операций сравнения
 class IComparisonOperations {
 public:
     virtual ~IComparisonOperations() = default;
@@ -28,12 +33,16 @@ public:
     virtual bool greater_or_equal(const IComparisonOperations* other) const = 0;
 };
 
+
+// Интерфейс для вывода
 class IOutputOperation {
 public:
     virtual ~IOutputOperation() = default;
     virtual void print(std::ostream& stream) const = 0;
 };
 
+
+// Основной класс числа uint_2022 
 class UInt2022 : public INumberConverter, 
                  public IArithmeticOperations,
                  public IComparisonOperations,
@@ -48,30 +57,30 @@ public:
         chunks.fill(0);
     }
 
-    // INumberConverter implementation
+    // Реализация INumberConverter
     void from_uint(uint32_t i) override;
     void from_string(const char* buff) override;
 
-    // IArithmeticOperations implementation
+    // Реализация IArithmeticOperations
     IArithmeticOperations* add(const IArithmeticOperations* other) override;
     IArithmeticOperations* subtract(const IArithmeticOperations* other) override;
     IArithmeticOperations* multiply(const IArithmeticOperations* other) override;
     IArithmeticOperations* divide(const IArithmeticOperations* other) override;
 
-    // IComparisonOperations implementation
+    // Реализация IComparisonOperations
     bool equals(const IComparisonOperations* other) const override;
     bool not_equals(const IComparisonOperations* other) const override;
     bool greater_or_equal(const IComparisonOperations* other) const override;
 
-    // IOutputOperation implementation
+    // Реализация IOutputOperation
     void print(std::ostream& stream) const override;
 
-    // Helper methods
+    // Побочные методы
     static UInt2022 create_from_uint(uint32_t i);
     static UInt2022 create_from_string(const char* buff);
 };
 
-// Global operators for backward compatibility
+// Глобальные операторы для обратной совместимости
 UInt2022 operator+(const UInt2022& lhs, const UInt2022& rhs);
 UInt2022 operator-(const UInt2022& lhs, const UInt2022& rhs);
 UInt2022 operator*(const UInt2022& lhs, const UInt2022& rhs);
