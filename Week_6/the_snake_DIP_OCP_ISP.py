@@ -37,6 +37,7 @@ class IGameObject(ABC):
     def position(self):
         pass
 
+    @position.setter
     @abstractmethod
     def position(self, value):
         pass
@@ -56,6 +57,7 @@ class IControllable(IGameObject):
     def direction(self):
         pass
 
+    @direction.setter
     @abstractmethod
     def direction(self, value):
         pass
@@ -65,6 +67,7 @@ class IControllable(IGameObject):
     def next_direction(self):
         pass
 
+    @next_direction.setter
     @abstractmethod
     def next_direction(self, value):
         pass
@@ -86,6 +89,7 @@ class GameObject(IGameObject):
     def position(self):
         return self._position
 
+    @position.setter
     def position(self, value):
         self._position = value
 
@@ -133,6 +137,7 @@ class Snake(IControllable, GameObject):
     def direction(self):
         return self._direction
 
+    @direction.setter
     def direction(self, value):
         self._direction = value
 
@@ -140,6 +145,7 @@ class Snake(IControllable, GameObject):
     def next_direction(self):
         return self._next_direction
 
+    @next_direction.setter
     def next_direction(self, value):
         self._next_direction = value
 
